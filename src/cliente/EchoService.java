@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "EchoService", targetNamespace = "http://Controle/", wsdlLocation = "file:/C:/Users/Josemar/Downloads/Faculdade-WS/src/cliente/.wsdl")
+@WebServiceClient(name = "EchoService", targetNamespace = "http://Controle/", wsdlLocation = "http://localhost:8080/?wsdl")
 public class EchoService
     extends Service
 {
@@ -30,7 +30,7 @@ public class EchoService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("file:/C:/Users/Josemar/Downloads/Faculdade-WS/src/cliente/.wsdl");
+            url = new URL("http://localhost:8080/?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }

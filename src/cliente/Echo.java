@@ -1,6 +1,7 @@
 
 package cliente;
 
+import java.util.List;
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebResult;
@@ -26,17 +27,17 @@ public interface Echo {
 
     /**
      * 
-     * @param as
+     * @param titulo
      * @return
-     *     returns java.lang.String
+     *     returns java.util.List<cliente.TimeVO>
      */
     @WebMethod
     @WebResult(targetNamespace = "")
     @RequestWrapper(localName = "echo", targetNamespace = "http://Controle/", className = "cliente.Echo_Type")
     @ResponseWrapper(localName = "echoResponse", targetNamespace = "http://Controle/", className = "cliente.EchoResponse")
     @Action(input = "http://Controle/Echo/echoRequest", output = "http://Controle/Echo/echoResponse")
-    public String echo(
-        @WebParam(name = "as", targetNamespace = "")
-        String as);
+    public List<TimeVO> echo(
+        @WebParam(name = "titulo", targetNamespace = "")
+        String titulo);
 
 }

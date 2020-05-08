@@ -51,6 +51,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link TimeVO }
+     * 
+     */
+    public TimeVO createTimeVO() {
+        return new TimeVO();
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Echo_Type }{@code >}}
      * 
      */

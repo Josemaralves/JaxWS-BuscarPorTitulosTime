@@ -16,7 +16,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="as" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="titulo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -27,34 +27,34 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "echo", propOrder = {
-    "as"
+    "titulo"
 })
 public class Echo_Type {
 
-    protected String as;
+    protected String titulo;
 
     /**
-     * Obtém o valor da propriedade as.
+     * Obtém o valor da propriedade titulo.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getAs() {
-        return as;
+    public String getTitulo() {
+        return titulo;
     }
 
     /**
-     * Define o valor da propriedade as.
+     * Define o valor da propriedade titulo.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setAs(String value) {
-        this.as = value;
+    public void setTitulo(String value) {
+        this.titulo = value;
     }
 
 }
